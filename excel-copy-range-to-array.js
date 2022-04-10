@@ -22,7 +22,7 @@
  */
 export function excelCopyRangeToArray(data) {
     const result = [];
-    const safeSymbolsRegExp = /[\n\t]/g;
+    const safeSymbolsRegExp = /[\n\t]/;
     const safeCellRegExp = /^"([^"]*(?:""[^"]*)*)"/;
     const generalCellRegExp = /^([^\t\r\n]*)/;
 
